@@ -4,7 +4,9 @@ services:
     image: enwaiax/x-ui:latest
     restart: always
     ports:
-      - 80:54321
+      - 54321:54321
+      - 80:80
+      - 443:443
     volumes:
       - ./x-ui:/etc/x-ui/
 
